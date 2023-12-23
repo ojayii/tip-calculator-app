@@ -1,0 +1,188 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --grayishCyan: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=index.css.map */
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
+}
+
+.attribution a {
+  color: hsl(0, 0%, 0%);
+  line-height: 1.4;
+}
+
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10%;
+    padding-block: 2.5rem;
+    min-height: 100vh;
+  }
+}
+
+header {
+  width: 100%;
+}
+header figure {
+  width: 100%;
+  text-align: center;
+  padding-block: 2.4rem;
+}
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  header figure {
+    padding-top: 0;
+  }
+}
+
+main {
+  background-color: var(--white);
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  padding: 2rem 8%;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  main {
+    display: flex;
+    border-radius: 1.5rem;
+    padding: clamp(1.5rem, 2.78vw, 2.5rem);
+    gap: 5%;
+    max-width: 58rem;
+  }
+}
+
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  .top {
+    width: 47.5%;
+  }
+}
+.top__bill-label {
+  margin-bottom: 1rem;
+}
+.top__bill, .top__num-pple {
+  position: relative;
+}
+.top__bill input, .top__num-pple input {
+  font-size: clamp(1.3rem, 7.2vw, 1.7rem);
+  color: var(--veryDarkCyan);
+  text-align: right;
+  padding: 0.6rem 4%;
+  border: none;
+  background-color: var(--veryLightGrayishCyan);
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.top__bill input:hover, .top__num-pple input:hover {
+  outline: 2px solid var(--strongCyan);
+}
+.top__bill img, .top__num-pple img {
+  position: absolute;
+  left: 4%;
+  top: 1.5rem;
+}
+.top__input-can {
+  width: 100%;
+  display: flex;
+  gap: 1rem 5%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.top__input-can input {
+  width: 47.5%;
+  border-radius: 5px;
+  font-size: clamp(1.3rem, 7.2vw, 1.7rem);
+  padding: 0.65rem 3%;
+  border: none;
+  text-align: center;
+  background-color: var(--veryDarkCyan);
+  color: var(--white);
+}
+.top__input-can input:hover {
+  background-color: var(--strongCyan);
+}
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  .top__input-can input {
+    width: 30%;
+  }
+}
+.top__input-can input[type=number] {
+  background-color: var(--veryLightGrayishCyan);
+  text-align: right;
+  color: var(--veryDarkCyan);
+}
+.top__input-can input[type=number]:hover {
+  outline: 2px solid var(--strongCyan);
+}
+.bottom {
+  background-color: var(--veryDarkCyan);
+  border-radius: 1rem;
+  padding: 2.5rem 7% 1.5rem 7%;
+  width: 100%;
+}
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  .bottom {
+    width: 47.5%;
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+.bottom__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.bottom__row__col1 .p1 {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+.bottom__row__col1 .p2 {
+  font-size: 0.9rem;
+  color: var(--grayishCyan);
+}
+.bottom__row__col2 {
+  display: flex;
+  align-items: center;
+}
+.bottom__row__col2 p {
+  font-size: clamp(1.3rem, 8.53vw, 2rem);
+  color: var(--strongCyan);
+}
+.bottom__resetbtn {
+  background-color: var(--strongCyan);
+  width: 100%;
+  border-radius: 6px;
+  font-size: clamp(1.2rem, 6.4vw, 1.5rem);
+  padding-block: 0.8rem;
+  border: none;
+  color: var(veryDarkCyan);
+  text-transform: uppercase;
+}
+.bottom__resetbtn:hover {
+  background-color: var(--grayishCyan);
+}
+@media (min-width: 63.975rem) and (max-width: 1000rem) {
+  .bottom__resetbtn {
+    position: absolute;
+    bottom: 2rem;
+    width: calc(100% - 4.4rem);
+  }
+}/*# sourceMappingURL=index.css.map */
