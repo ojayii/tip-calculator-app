@@ -31,6 +31,16 @@ button {
   --white: hsl(0, 0%, 100%);
 }
 
+/* clamp(rem, vw, )
+
+Grab all neccessary elements --done
+Add click event listener to rset button to clear all inputs and outputs
+Add click event listener to push tip input value to a variable for further processing to remove modulue operator
+Add change event listener to number inputs to push their values to variables 
+Add condition to insert error message and navigator.vibrate on num pple input if value = 0
+Program executes onchange of people number input
+
+*/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -96,10 +106,17 @@ main {
 .top__bill-label {
   margin-bottom: 1rem;
 }
-.top__bill, .top__num-pple {
+.top__input-group {
   position: relative;
+  margin-bottom: 2rem;
 }
-.top__bill input, .top__num-pple input {
+.top__input-group .errormessage {
+  color: white;
+  position: absolute;
+  top: -1rem;
+  right: 0;
+}
+.top__input-group input {
   font-size: clamp(1.3rem, 7.2vw, 1.7rem);
   color: var(--veryDarkCyan);
   text-align: right;
@@ -108,13 +125,12 @@ main {
   background-color: var(--veryLightGrayishCyan);
   border-radius: 5px;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
   width: 100%;
 }
-.top__bill input:hover, .top__num-pple input:hover {
+.top__input-group input:hover {
   outline: 2px solid var(--strongCyan);
 }
-.top__bill img, .top__num-pple img {
+.top__input-group img {
   position: absolute;
   left: 4%;
   top: 1.5rem;
