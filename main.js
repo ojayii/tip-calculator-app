@@ -30,6 +30,7 @@ inputs[1].addEventListener("change", () => {
     if (inputs[1].value.trim() == 0) {
         inputs[1].style.outline = "2px solid red"
         inputGroup[1].appendChild(span)
+        navigator.vibrate([150, 50])
         numPple = null
     } else if (inputs[1].value.trim() != 0 && inputGroup[1].childElementCount == 3) {
         inputs[1].style.outline = ""
