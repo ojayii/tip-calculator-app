@@ -1,6 +1,6 @@
 ﻿# This is a solution to a Frontend Mentor challenge.
 
-﻿#﻿# Technologies used:
+Technologies used:
  - HTML
  - SCSS
  - Javascript
